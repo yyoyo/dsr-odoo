@@ -1,0 +1,5 @@
+start OpenERP:
+
+mkvirtualenv openerp-learn
+./openerp-server -s --addons=addons/
+
