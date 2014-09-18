@@ -3,3 +3,6 @@ start OpenERP:
 mkvirtualenv openerp-learn
 ./openerp-server -s --addons=addons/
 
+doc:
+
+http://openerp-server.readthedocs.org/en/latest/03_module_dev_02.html#openerp-objects

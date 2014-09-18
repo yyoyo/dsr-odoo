@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- Tree View -->
+        <record model="ir.ui.view" id="view_idea_category_tree">
+            <field name="name">dsr.timebank.debt.tree</field>
+            <field name="model">dsr.timebank.debt</field>
+            <field name="field_parent"></field>
+            <field name="arch" type="xml">
+                <tree string="dsr.timebank.debt.treelist">
+                    <field name="member"/>
+                    <field name="intervention_date"/>
+                    <field name="hours"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Action -->
+        <record id="action_dsr_timebankdebtl" model="ir.actions.act_window">
+            <field name="name">dsr.timebank.debt</field>
+            <field name="res_model">dsr.timebank.debt</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem
+        id="action_dsr_timebankdebt"
+        parent="menu_new_models"
+        action="action_dsr_timebankdebtl"
+        />
+
+    </data>
+</openerp>

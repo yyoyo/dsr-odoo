@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record model="ir.ui.view" id="view_partner_form">
+            <field name="name">res.partner.form.inherit</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page string="TimeBank Debt">
+                        <field name="timebank_debts" nolabel="1" colspan="4" widget="one2many_list">
+                            <tree string="XXXX" editable="top">
+                                <field name="intervention_date"/>
+                                <field name="hours"/>
+                            </tree>
+                        </field>
+
+                    </page>
+                </notebook>
+            </field>
+        </record>
+
+    </data>
+</openerp>
